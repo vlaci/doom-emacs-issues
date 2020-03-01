@@ -18,7 +18,7 @@ let
 
   nix-doom-emacs = ref: pkgs.callPackage (
     builtins.fetchTarball {
-      url = https://github.com/vlaci/nix-doom-emacs/archive/master.tar.gz;
+      url = https://github.com/vlaci/nix-doom-emacs/archive/2143f7f7bb272c0a500e1c7839b5429675ed567c.tar.gz;
     }
   ) {
     bundledPackages = false;
