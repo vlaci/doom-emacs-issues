@@ -3,6 +3,7 @@
 let
   good-ref = "7cd9e55c8cc816ddb1256d40f590840e5d6e9bbf";
   bad-ref = "c311d798ce9ca64404926ad4d5be25edc35ded60";
+  fixed-ref = "29650a67a28692d73fa6088b47ad78df052ad5fc";
 
   overrides = self: super: {
     lsp-mode = super.lsp-mode.overrideAttrs (
@@ -40,4 +41,5 @@ in
 {
   good = shell good-ref;
   bad = shell bad-ref;
+  fixed = shell fixed-ref;
 }
